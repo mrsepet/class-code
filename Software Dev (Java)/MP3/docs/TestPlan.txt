@@ -1,0 +1,31 @@
+Test Plan Doc Outline
+
+Name: Benjamin Edgar && Will Emmanuel
+Email ID: bde2wd && wre9fz
+Assignment: Homework 2
+Lab Section: 103
+No Other Collaborators
+
+ID: test1
+Purpose: Test the addSong(Song s) method in the PlayList class.
+Inputs: p1.addSong(s1) - this input should add the previously initialized song s1 to the 		previously initialized playlist p1.
+Expected Outputs: p1.addSong(s1) should return true
+
+ID: test2
+Purpose: Test the addPlayList(PlayList p) method in the PlayList class.
+Inputs: p2.addPlayList(p1) - this input adds the playlist p1 to the playlist p2
+	p2.addPlayList(p1) - this input adds the playlist p1 to the playlist p2
+	p2.addPlayList(p2) - this input adds the playlist p2 to the playlist p2
+Expected Outputs: The first instance of p2.addPlayList(p1) should return true because p1 is not 	on playlist p2.  The second instance of p2.addPlayList(p1) should return false because 
+	p1 is already on playlist p2.  p2.addPlayList(p2) should return false because you 	cannot add a playlist to itself.
+
+ID: test3
+Purpose: Test the loadSongs(String fileName) method in the PlayList class.
+Inputs: p1.loadSongs("testFile1.txt") - this input loads songs from testFile1.txt
+	p1.loadSongs("testFile2.txt") - this input loads songs from testFile2.txt
+	p1.loadSongs("fake.txt") - this input loads songs from fake.txt
+	p1.getPlayableList().contains(s4)
+Expected Outputs: p1.loadSongs("testFile1.txt") should return true because testFile1.txt is a 
+	valid text file. p1.loadSongs("testFile2.txt") should return false because 		testFile2.txt will throw an exception since there are no .mp3 file names.  	
+	p1.loadSongs("fake.txt") should return false because fake.txt does not exist.
+	p1.getPlayableList().contains(s4) should return true because the song s4 was loaded 		into playlist p1 in testFile1.txt.

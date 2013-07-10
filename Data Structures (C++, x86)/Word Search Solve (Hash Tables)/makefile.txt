@@ -1,0 +1,26 @@
+#William Emmanuel
+#wre9fz
+#Feb 24, 2012
+#Makefile
+
+CXX=g++ $(CXXFLAGS)
+CXXFLAGS=-O2
+
+OFILES = timer.o hashTable.o wordPuzzle.o
+
+wordPuzzle: $(OFILES)
+	$(CXX) $(OFILES)
+	@echo "Compile sucessful"
+	
+wordPuzzle.o: wordPuzzle.cpp
+	$(CXX) -O2 -c wordPuzzle.cpp
+	
+timer.o: timer.cpp timer.h
+	$(CXX) -O2 -c timer.cpp
+	
+hashTable.o: hashTable.cpp hashTable.h
+	$(CXX) -O2 -c hashTable.cpp
+	
+	
+clean:
+	-rm *.o wordPuzzle

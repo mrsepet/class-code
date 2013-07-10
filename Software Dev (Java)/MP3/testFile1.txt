@@ -1,0 +1,35 @@
+	
+ 
+  	                 
+ t1a t1b // comment
+  	
+          
+  	
+ a1a a1b//comment
+  	
+             
+   	
+ 01:61
+   	               
+ test.mp3
+	  	
+ //comment
+ 	  	
+ 
+ 	  	
+ t2a t2b t2c
+   	
+ 
+ 	  	
+    //comment with leading blanks on line by itself
+   	
+ a2a a2b a2c
+   	
+ 
+ 	  	
+ 02:02
+ test2.mp3
+ test1
+ test2
+ 3:3
+ test3.mp3
